@@ -4,9 +4,6 @@ A machine learning web application that predicts whether a loan application will
 
 ---
 
-## 🚀 Live Demo
-
-> 🔗 [creditwiseloanapproval.streamlit.app](https://creditwiseloanapproval-bdabnkbbesvktnctxu2dkd.streamlit.app)
 
 ---
 
@@ -112,6 +109,4 @@ streamlit run main.py
 
 ---
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).

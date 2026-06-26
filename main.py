@@ -343,9 +343,12 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
-model  = joblib.load(r"C:\myproject\CreditWise_Loan\CreditWise__Loan_Aprroval\loan_model.pkl")
-scaler = joblib.load(r"C:\myproject\CreditWise_Loan\CreditWise__Loan_Aprroval\scaler.pkl")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, "loan_model.pkl"))
+scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
